@@ -1,42 +1,67 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import { Link } from "gatsby";
 import React from "react"
+import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+// Styles
+import styled from 'styled-components';
+
+
+
+
+const NavStyle = styled.div`
+  margin: 0;
+  background-color: #101f2f; 
+      a {
+        margin-right: 25px;
+        color: #06BDD6!important;
+      }
+      
+          #navbarResponsive {
+            /* margin-right: 5.8rem; */
+          }
+          #navToggle {
+            border: none;
+            fill: #06BDD6;
+          }
+          .pull-right {
+            color: #ffffff;
+          }
+`;
+
+const MainButton = styled.div`
+    display: flex;
+    justify-content: flex-end;
+`;
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+  <NavStyle>
+   <Container>
+      <Navbar expand="md">
+        <Navbar.Brand href="/">{siteTitle}</Navbar.Brand> 
+        <Navbar.Toggle id="navToggle" aria-controls="navbarResponsive" />
+        <Navbar.Collapse id="navbarResponsive">
+          <Nav as="ul" className="justify-content-center" activeKey="/home">
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+                  <Link to="/">Home</Link>
+                  <Link to="/#about">About</Link>
+                  <Link to="/#work">Work</Link>
+                  <Link to="/#projects">Projects</Link>
+                  <Link to="/#contact">Contact</Link>
+    
+            </Nav>  
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+                  <MainButton>
+                        <Button 
+                            variant="default"
+                            style={{ width: 60, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
+                            >
+                            <Link style={{ margin: 0 }} to="/resume">Resume</Link>
+                        </Button>    
+                  </MainButton>
 
-export default Header
+          </Navbar.Collapse>
+        </Navbar>
+    </Container>
+  </NavStyle>
+);
+
+export default Header;
