@@ -3,6 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from 'styled-components';
+import { Link } from "gatsby";
 
 const LeftStyle = styled.div`
     border-left: 1px;
@@ -34,7 +35,7 @@ class Work extends React.Component {
     render() {
         return(
             <Container style={{ justifyContent: 'center', padding: '3rem 5rem 1.5rem 5rem', }}>
-                <h1 style={{ marginBottom: '2rem' }}>
+                <h1 style={{ display: 'inline-flex', marginRight: '1rem', marginBottom: '2rem'}}>
                 Work Experience
                 </h1>
             <Row>

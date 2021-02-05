@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faFacebook, faTwitter} from '@fortawesome/free-brands-svg-icons'
@@ -66,6 +66,9 @@ class About extends React.Component {
                         I'm an avid learner, driven by a need to envelop myself in what interests me, 
                         coupled with my self-starter nature. I am constantly on a mission to find the balance between ideal and practical.
                         </p>
+                        <Button style={{ marginBottom: 15, background: 'none', color: '#06BDD6', borderColor: '#06BDD6'}}><Link to='https://bisrad.myportfolio.com/'>
+                Design Portfolio
+                </Link></Button>
                         <Row>
                     {/* Site Links */}
                     <LinkStyle>
