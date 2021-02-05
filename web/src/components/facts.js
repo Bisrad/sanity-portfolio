@@ -9,6 +9,7 @@ const LeftStyle = styled.div`
     
         h6 {
             padding-left: 15px;
+            color: #fff;
         }
         p {
             font-size: .8rem;
@@ -23,7 +24,7 @@ class Facts extends React.Component {
                     <Row style={{ flexWrap: 'none' }}>
                         <LeftStyle>
                             <Col xs={12} md={8} style={{ width: '30vw' }}>
-                            <h6>Always Learning</h6>
+                            <h6 >Always Learning</h6>
                             <p>I enjoy spending my time learning as much as I can about all different aspects of technology past and present.</p>
                             </Col>
                         </LeftStyle>

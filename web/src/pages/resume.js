@@ -167,7 +167,7 @@ class Resume extends React.Component {
                             variant="default"
                             style={{marginLeft: 20, width: 230, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
                             >
-                            <a href = {Pdf} target = "_blank">Download Resume</a>
+                            <a href='https://resume.io/r/yFv8cI2lh' target = "_blank">Download Resume</a>
                         </Button>    
                   </MainButton>
                 </Row>
