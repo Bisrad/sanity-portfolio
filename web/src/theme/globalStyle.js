@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
+
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Kodchasan:400,700');
   * {
@@ -12,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'Jost', sans-serif;
+    background-color: #181a1f;
   }
   a {
     text-decoration: none;
@@ -19,5 +21,8 @@ export const GlobalStyle = createGlobalStyle`
   ul {
     margin: 0 auto;
     list-style-type: none;
+  }
+  .Row {
+    margin-left: 0;
   }
 `;

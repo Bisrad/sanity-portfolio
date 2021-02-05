@@ -10,6 +10,7 @@ import Header from './header';
 import Footer from './footer';
 
 
+
 const ContentWrapper = styled.div`
   flex: 1 0 auto;
   max-width: 100vw;
@@ -19,7 +20,7 @@ const FlexThisBox = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #101f2f;
+  background-color: #181a1f;
   color: #06BDD6;
 `;
 
@@ -38,6 +39,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <GlobalStyle />
+
         <Helmet 
           title={data.site.siteMetadata.title} 
           meta={[
@@ -47,10 +49,10 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
+       
           <FlexThisBox>
             <Header siteTitle={data.site.siteMetadata.title} />
             <ContentWrapper>{children}</ContentWrapper>
-        
             <Footer />
           </FlexThisBox>
       </>

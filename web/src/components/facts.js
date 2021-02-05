@@ -2,11 +2,12 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styled from 'styled-components';
 
+
 const LeftStyle = styled.div`
     border-left-style: solid;
-    padding: .5rem;
+    margin: 'auto';
     
-        h5 {
+        h6 {
             padding-left: 15px;
         }
         p {
@@ -18,24 +19,24 @@ const LeftStyle = styled.div`
 class Facts extends React.Component {
     render() {
         return(
-                <Container style={{ backgroundColor: '#0f3e61'}}>
-                    <Row>
+                <Container fluid style={{ display: 'flex', padding: '2rem', justifyContent: 'center', width: 'auto'}}>
+                    <Row style={{ flexWrap: 'none' }}>
                         <LeftStyle>
-                            <Col xs={12} md={8} style={{ width: 200 }}>
-                            <h5>Fact 1</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis nemo sit harum quam minus!</p>
+                            <Col xs={12} md={8} style={{ width: '30vw' }}>
+                            <h6>Always Learning</h6>
+                            <p>I enjoy spending my time learning as much as I can about all different aspects of technology past and present.</p>
                             </Col>
                         </LeftStyle>
                         <LeftStyle>
-                            <Col xs={12} md={8} style={{ width: 200 }}>
-                            <h5>Fact 2</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis nemo sit harum quam minus!</p>
+                            <Col xs={12} md={8} style={{ width: '20vw'}}>
+                            <h6>My Hobbies</h6>
+                            <p>I take time to enjoy the outdoors: camping, hiking, guitar, and rock climbing when I can.</p>
                             </Col>
                         </LeftStyle>
                         <LeftStyle>
-                            <Col xs={12} md={8} style={{ width: 200 }}>
-                            <h5>Fact 2</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quis nemo sit harum quam minus!</p>
+                            <Col xs={12} md={8} style={{ width: '20vw'}}>
+                            <h6>Future Interest</h6>
+                            <p>I'm looking to grow my skills in Sanity, Gatsby and React in the near Future</p>
                             </Col>
                         </LeftStyle>
                     </Row>

@@ -16,9 +16,12 @@ module.exports = {
         dataset: 'production',
         token: process.env.MY_SANITY_TOKEN,
         start_url: `/`,
-        background_color: `#11202E`,
-        theme_color: `#11202E`,
+        background_color: `#2E3440`,
+        theme_color: `#2E3440`,
         icon: `web/src/images/favicon-32x32.png`,
+          rule: {
+            includes: /images/
+          }
       },
     },
   ],

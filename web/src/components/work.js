@@ -1,4 +1,6 @@
+import { faCss3, faHtml5, faReact, faSass, faJs } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styled from 'styled-components';
 
@@ -11,6 +13,16 @@ const LeftStyle = styled.div`
         }
 `;
 
+const LinkStyle = styled.div`
+  display: block;
+  margin-top: 1rem;
+  margin: 0;
+    .icon {
+      margin-right: 30px;
+      color: #06BDD6;
+    }
+`;
+
 // const ButtonStyle = styled.div`
 //     width: 350;
 //     border-color: '#06BDD6'; 
@@ -21,36 +33,53 @@ const LeftStyle = styled.div`
 class Work extends React.Component {
     render() {
         return(
-            <Container id='work' style={{ borderRight: 3, padding: 50 }}>
+            <Container style={{ justifyContent: 'center', padding: '3rem 5rem 1.5rem 5rem', }}>
+                <h1 style={{ marginBottom: '2rem' }}>
+                Work Experience
+                </h1>
+            <Row>
+                <Col sm={8}>
+                <h5 style={{ color: '#fff'}}>Graphic Designer</h5>
+                </Col>
+            </Row>
+            <Row style={{ marginBottom: '2rem' }}>
+                <Col sm={4}>Designer at Sandoval Studios
                 <Row>
-                    <Col>
-                    <h2 style={{ marginBottom:'1.5rem'  }}>Work Experience</h2>
-                    <Row style={{ margin: 'auto' }}>
-                    <ul style={{ margin: 0, padding: 0 }}>
-                        <li style={{ paddingBottom: 20 }}>
-                        <Button>Web Designer</Button>
-                        </li>
-                        <li style={{ paddingBottom: 20 }}>
-                        <Button>Quality Assurance Engineer</Button>
-                        </li>
-                        <li style={{ paddingBottom: 20 }}>
-                        <Button>Web Developer</Button>
-                        </li>
-                        <li style={{ paddingBottom: 20 }}>
-                        <Button>Wordpress Developer</Button>
-                        </li>
-                    </ul>
-                    </Row>
-                    </Col>
-                    <Col style={{ margin: 'auto' }}>
-                    <LeftStyle>
-                    <p>veniam, et amet, qui quis, platea elit. ullamco eu consequat mollis labore elit. mollis aliquam est mollis incididunt aute duis scelerisque ea mi. adipiscing congue, aute consectetur malesuada amet, id pretium a</p>
-                    <p>veniam, et amet, qui quis, platea elit. ullamco eu consequat mollis labore elit. mollis aliquam est mollis incididunt aute duis scelerisque ea mi. adipiscing congue, aute consectetur malesuada amet, id pretium a</p>                    
-                    </LeftStyle>
-                    </Col>
+                <Col sm>https://www.sandovalagency.com/</Col>
                 </Row>
+                </Col>
+                <Col style={{ maxWidth: '45vw' }}>Designed Websites, Print collateral, and need materials</Col>
+            </Row>
+            <Row >
+                <Col sm={8}>
+                <h5 style={{ color: '#fff'}}>QA Engineer</h5>
+                </Col>
+            </Row>
+            <Row style={{ marginBottom: '2rem' }}>
+                <Col sm={4}>Quality Assurance Engineer at Fair
+                <Row>
+                     <Col sm>https://www.fair.com</Col>
+                </Row>
+                </Col>
+                <Col style={{ maxWidth: '45vw'}}>Worked with Product to pin Pain points, update Educational Materials, and enhance UI/UXs</Col>
+            </Row>
+            <Row >
+                <Col sm={8}>
+                <h5 style={{ color: '#fff'}}>Wordpress Designer</h5>
+                </Col>
+                <Col sm={4}>Graphic Designer and web api developer</Col>
+            </Row>
+            <Row style={{ marginBottom: '2rem' }}>
+                <Col sm={4}>Wordpress Designer at Endurance Internaition
+                <Row>
+                     <Col sm>https://www.endurance.com</Col>
+                </Row>
+                </Col>
+                <Col style={{ maxWidth: '45vw'}}>Designed WP Templates, and custom sites for clients in an high volume work environment</Col>
+            </Row>
             </Container>
         );
     }
 }
+
 export default Work

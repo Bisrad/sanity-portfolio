@@ -9,7 +9,7 @@ import styled from 'styled-components';
 
 const NavStyle = styled.div`
   margin: 0;
-  background-color: #101f2f; 
+  background-color: #181a1f; 
       a {
         margin-right: 25px;
         color: #06BDD6!important;
