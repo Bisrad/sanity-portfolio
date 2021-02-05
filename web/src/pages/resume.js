@@ -4,25 +4,33 @@ import Layout from '../components/layout';
 import styled from 'styled-components';
 import { Col, Container, Row, Image, Button } from 'react-bootstrap';
 import img1 from '../images/ProfilePic.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faMapMarkerAlt, faPencilRuler } from '@fortawesome/free-solid-svg-icons';
+import Pdf from '../assets/bradResume2019.pdf';
+
+
+import myImage from '../images/backgroundImage.png';
+
+const HeaderImage = styled.div`
+  background: no-repeat url(${myImage});
+`;
 
 
 const ResumeStyles = styled.div`
     display: flex;
     justify-content: center;
-    margin: 4rem;
+
  
         .img1 {
-            width: 250px;
-            padding: 0 65px;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+            
+            width: 265px;
+            margin-bottom: 1.5rem;
         }
         Col {
-            padding: 0;
+            padding-top: 15px;
         }
         h2, h5 {
-            text-align: center;
-            margin: auto;
+          
         }
 `;
 
@@ -32,33 +40,65 @@ const MainButton = styled.div`
     border-radius: 3px!important;
 `;
 
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 1,
-            width: 250
-        }}
-    />
-);
+// const ColoredLine = ({ color }) => (
+//     <hr
+//         style={{
+//             color: color,
+//             backgroundColor: color,
+//             height: 1,
+//             width: 220
+//         }}
+//     />
+// );
 
 class WorkExperience extends React.Component {
 
-    render() {
-        
+    render() { 
         return (
             <div>
                 <Container>
                     <Row style= {{ marginTop: 15 }}>
                         <Col style= {{ padding: 0 }}>
-                            <h6>Job Title</h6> 
-                            <span style={{ marginRight: '2rem' }}> <em></em>  Company name</span>
-                            <span style={{ marginRight: '2rem' }}><em></em> Location</span>
+                            <h6>Web Designer</h6> 
+                            <span style={{ marginRight: '2rem' }}> <em></em>  Quips.com</span>
+                            <span style={{ marginRight: '2rem' }}><em></em> Tempe, AZ</span>
                         </Col>
-                        <Col style={{ textAlign: 'right', marginTop: '1rem' }}>
-                            <Button style={{ padding: 5, borderRadius: 50, border: 'none', backgroundColor: '#06BDD6', width: 125, justifyContent: 'flex-end' }}>Full Time</Button>
-                            <p style={{ marginRight: 8 }}> January 29, 2021 </p>
+                        <Col style={{ textAlign: 'right' }}>
+                            <Button style={{ padding: 0, borderRadius: 50, border: 'none', backgroundColor: '#06BDD6', width: 125, justifyContent: 'flex-end' }}>Full Time</Button>
+                            <p style={{ marginRight: 8 }}> June 2020 - December 2020 </p>
+                        </Col>
+                    </Row>
+                    <Row style= {{ marginTop: 15 }}>
+                        <Col style= {{ padding: 0 }}>
+                            <h6>Quality Assurance Analyst</h6> 
+                            <span style={{ marginRight: '2rem' }}> <em></em>  Fair.com</span>
+                            <span style={{ marginRight: '2rem' }}><em></em> Phoenix, AZ</span>
+                        </Col>
+                        <Col style={{ textAlign: 'right' }}>
+                            <Button style={{ padding: 0, borderRadius: 50, border: 'none', backgroundColor: '#06BDD6', width: 125, justifyContent: 'flex-end' }}>Full Time</Button>
+                            <p style={{ marginRight: 8 }}> June 2019 - March 2020 </p>
+                        </Col>
+                    </Row>
+                    <Row style= {{ marginTop: 15 }}>
+                        <Col style= {{ padding: 0 }}>
+                            <h6>Web Developer</h6> 
+                            <span style={{ marginRight: '2rem' }}> <em></em>  Mediphor Design</span>
+                            <span style={{ marginRight: '2rem' }}><em></em> Tempe, AZ</span>
+                        </Col>
+                        <Col style={{ textAlign: 'right' }}>
+                            <Button style={{ padding: 0, borderRadius: 50, border: 'none', backgroundColor: '#06BDD6', width: 125, justifyContent: 'flex-end' }}>Full Time</Button>
+                            <p style={{ marginRight: 8 }}> January 2018 - March 2019</p>
+                        </Col>
+                    </Row>
+                    <Row style= {{ marginTop: 15 }}>
+                        <Col style= {{ padding: 0 }}>
+                            <h6>Wordpress Designer</h6> 
+                            <span style={{ marginRight: '2rem' }}> <em></em>  Endurance International</span>
+                            <span style={{ marginRight: '2rem' }}><em></em> Tempe, AZ</span>
+                        </Col>
+                        <Col style={{ textAlign: 'right' }}>
+                            <Button style={{ padding: 0, borderRadius: 50, border: 'none', backgroundColor: '#06BDD6', width: 125, justifyContent: 'flex-end' }}>Full Time</Button>
+                            <p style={{ marginRight: 8 }}> January 2017 - January 2018</p>
                         </Col>
                     </Row>
                 </Container>
@@ -75,7 +115,7 @@ class EducationBlock extends React.Component {
                 <Container>
                     <Row style= {{ marginTop: 15 }}>
                         <Col style= {{ padding: 0 }}>
-                            <h6>The Art Institute of Pittsburgh</h6> 
+                            <h6 >The Art Institute of Pittsburgh</h6> 
                             <span style={{ marginRight: '2rem' }}> <em></em>  Associates of Visual Arts</span>
                             <span style={{ marginRight: '2rem' }}><em></em> Phoenix, AZ</span>
                         </Col>
@@ -97,67 +137,61 @@ class Resume extends React.Component {
         return(
             <Layout>
             <ResumeStyles>
-            <Container>
-            <div>
-            <Link style={{ marginLeft: '4rem' }} to="/">⤎ Back to Projects</Link>
-            </div>
+            <HeaderImage>
+            <Container style={{ width: '100vw', padding: 55 }}>
             <Row>
-            <Col>
+            <Col sm={4}>
             <Image className='img1' src={img1} alt="profile pic" fluid/>
             <h2>Brad Thompson</h2>
             <h5>Front End Developer</h5>
-            <Row style={{ justifyContent: 'center', marginTop: 25 }}>
-                <i style={{ marginRight: 15 }}>env   </i>
-                <span>Bisraddesign@gmail.com</span>
+            <Row style={{ marginLeft: 2, marginTop: 25 }}>
+                <FontAwesomeIcon icon={faEnvelope} style={{ margin: '3px 15px 0px 0px' }} />
+                <a href= "mailto=bisraddesign@gmail.com">Bisraddesign@gmail.com</a>
                 <br />
             </Row>
-                <ColoredLine color="#06BDD6" />
-            <Row style={{ justifyContent: 'center', marginTop: 25 }}>
-                <i style={{ marginRight: 15 }}>env   </i>
-                <span>Bisraddesign@gmail.com</span>
+               
+            <Row style={{ marginLeft: 2, marginTop: 25 }}>
+               <FontAwesomeIcon icon={faPencilRuler} style={{ margin: '3px 15px 0px 0px' }} />
+                <Link to="https://bisrad.myportfolio.com/">My Design Portfolio</Link>
                 <br />
             </Row>
-                <ColoredLine color="#06BDD6" />
-            <Row style={{ justifyContent: 'center', marginTop: 25 }}>
-                <i style={{ marginRight: 15 }}>env   </i>
-                <span>Phoenix, AZ</span>
+              
+            <Row style={{ marginLeft: 2, marginTop: 25 }}>
+            <FontAwesomeIcon icon={faMapMarkerAlt} style={{ margin: '3px 15px 0px 0px' }} />
+                <span>Phoenix, Arizona</span>
                 <br />
             </Row>
-                <ColoredLine color="#06BDD6" />
-            <Row style={{ justifyContent: 'center', marginTop: 25, marginBottom: 45 }}>
-                <i style={{ marginRight: 15 }}>env   </i>
-                <span>Design & Development</span>
-                <br />
-            </Row>
-                <Row style={{ justifyContent: 'center' }}>
+                <Row style={{ marginTop: '2rem' }}>
                 <MainButton>
                         <Button 
                             variant="default"
-                            style={{width: 230, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
+                            style={{marginLeft: 20, width: 230, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
                             >
-                            <Link style={{ margin: 0 }} to="/resume">Download Resume</Link>
+                            <a href = {Pdf} target = "_blank">Download Resume</a>
                         </Button>    
                   </MainButton>
                 </Row>
             </Col>
-            <Col>
-            <h1>Professional Summary</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, porro, possimus quasi repudiandae accusamus dolorem distinctio pariatur quibusdam aspernatur est harum aut a. Temporibus quod recusandae quisquam adipisci dicta dignissimos ipsum, animi doloremque alias, mollitia repudiandae nulla itaque veritatis dolor quas sed laborum necessitatibus tempore!</p>
+            <Col sm={6}>
+            <h1 style={{ color: '#fff' }}>Professional Summary</h1>
+            <p style={{ fontSize: 14 }}>I'm a graphic / web designer. Diving into the world of full stack web developement.
+            From agency to freelancer; Building interactive Apps and Sites is my end goal.
+            <br />
+            </p>
             <Row>
             <Container>
-            <h3>Work Experience</h3>
-            <WorkExperience />
-            <WorkExperience />
+            <h3 style={{ color: '#fff' }}>Work Experience</h3>
             <WorkExperience />
             </Container>
             <Container>
-            <h3>Education</h3>
+            <h3 style= {{ color: '#fff', marginTop: 35 }}>Education</h3>
             <EducationBlock />
             </Container>
             </Row>
             </Col>
             </Row>
             </Container>
+            </HeaderImage>
             </ResumeStyles>
             </Layout>
         );

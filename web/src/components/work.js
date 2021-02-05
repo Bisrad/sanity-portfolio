@@ -1,28 +1,26 @@
-import { faCss3, faHtml5, faReact, faSass, faJs } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Container, Row, Col, Button } from "react-bootstrap";
-import styled from 'styled-components';
-import { Link } from "gatsby";
+import { Container, Row, Col } from "react-bootstrap";
+// import styled from 'styled-components';c
 
-const LeftStyle = styled.div`
-    border-left: 1px;
-    border-left-style: solid;
-    height: vh100;
-        p {
-            padding-left: 15px;
-        }
-`;
 
-const LinkStyle = styled.div`
-  display: block;
-  margin-top: 1rem;
-  margin: 0;
-    .icon {
-      margin-right: 30px;
-      color: #06BDD6;
-    }
-`;
+// const LeftStyle = styled.div`
+//     border-left: 1px;
+//     border-left-style: solid;
+//     height: vh100;
+//         p {
+//             padding-left: 15px;
+//         }
+// `;
+
+// const LinkStyle = styled.div`
+//   display: block;
+//   margin-top: 1rem;
+//   margin: 0;
+//     .icon {
+//       margin-right: 30px;
+//       color: #06BDD6;
+//     }
+// `;
 
 // const ButtonStyle = styled.div`
 //     width: 350;

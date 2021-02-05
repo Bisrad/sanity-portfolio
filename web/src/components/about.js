@@ -7,6 +7,12 @@ import styled from 'styled-components';
 import img1 from '../images/ProfilePic.png';
 import { Link } from "gatsby";
 
+import myImage from '../images/backgroundImage.png';
+
+const HeaderImage = styled.div`
+  background: no-repeat url(${myImage});
+`;
+
 
 const Boop = ({ rotation = 0, timing = 150, children }) => {
     const [isBooped, setIsBooped] = React.useState(false);
@@ -55,11 +61,11 @@ const LinkStyle = styled.div`
 class About extends React.Component {
     render() {
         return(
-
-            <Container id='about' style={{  justifyContent: 'center', margin: ' 5rem auto' }}>
+            <HeaderImage>
+            <Container id='about' style={{ justifyContent: 'center', margin: ' 5rem auto' }}>
                 <Row style={{ margin: 'auto' }}>
                     <Col style={{ margin: 'auto' }}>
-                        <h2 style={{ color: '#fff', fontSize: '5rem' }}>Hey, I'm Brad <span style={{ fontSize: 'smaller'}} role="img" aria-label="wave">👋</span></h2>
+                        <h2 style={{ color: '#fff', fontSize: '5rem' }}>Hey, I'm Brad <span style={{ fontSize: 'smaller'}} role="img" aria-label="wave"></span></h2>
                         <h5>Front End Developer | Digital Designer</h5>
                     
                         <p style={{ fontSize: '1rem' }}> 
@@ -100,6 +106,7 @@ class About extends React.Component {
                     </Col>
                 </Row>
             </Container>
+            </HeaderImage>
    
         );
     }

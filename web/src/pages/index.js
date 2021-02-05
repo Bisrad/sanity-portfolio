@@ -20,7 +20,7 @@ const HeaderImage = styled.div`
 const IndexPage = () => (
 
   <Layout>
-    <HeaderImage>
+    <HeaderImage style={{ backgroundPosition: 'bottom' }}>
         <About id='about' />
         <Facts id='facts' />
         <Work  id='work' />
