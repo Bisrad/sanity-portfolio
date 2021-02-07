@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 // Styles
-import { GlobalStyle } from '../theme/globalStyle';
 import styled from 'styled-components';
 // Component Imports
 import Header from './header';
 import Footer from './footer';
+import { GlobalStyle } from '../theme/globalStyle';
 
 
 
@@ -38,8 +38,7 @@ const Layout = ({ children }) => (
 
     render={data => (
       <>
-        <GlobalStyle />
-
+      <GlobalStyle />
         <Helmet 
           title={data.site.siteMetadata.title} 
           meta={[
@@ -55,6 +54,7 @@ const Layout = ({ children }) => (
             <ContentWrapper>{children}</ContentWrapper>
             <Footer />
           </FlexThisBox>
+        
       </>
     )}
   />

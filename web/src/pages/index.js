@@ -12,15 +12,24 @@ import Projects from '../components/projects';
 import Facts from '../components/facts';
 
 import myImage from '../images/backgroundImage.png';
+// import myTexture from '../images/Texture.png';
+
 
 const HeaderImage = styled.div`
+  max-width: 100%;
+  height: auto;
   background: no-repeat url(${myImage});
 `;
+
+// const TextureImage = {
+//   background: `center, no-repeat, url(${myTexture})`
+// };
+
 
 const IndexPage = () => (
 
   <Layout>
-    <HeaderImage style={{ backgroundPosition: 'bottom' }}>
+    <HeaderImage>
         <About id='about' />
         <Facts id='facts' />
         <Work  id='work' />

@@ -1,20 +1,21 @@
 import React from "react";
-import { Container, Button, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "gatsby";
+import Button from "../theme/Button";
 
 const MainButton = styled.div`
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 `;
 
 const LinkStyle = styled.div`
   display: flex;
   justify-content: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
     .icon {
       margin-right: 30px;
       color: #06BDD6;
@@ -30,27 +31,16 @@ class Contact extends React.Component {
                         Currently Looking to Join an Awesome development team 
                         to continue my path to Full stack Developer 
                   </h5>
-                  <MainButton>
+                 <MainButton>
                     <Row>
-                        <Button 
-                            variant="default"
-                            style={{ width: 350, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
-                            >
-                           <Link to='https://github.com/Bisrad'>See More at Github</Link>
-                            
-                        </Button>    
+                        <Button as="a" href="https://github.com/Bisrad">Checkout My Github</Button>
                     </Row>
-                  </MainButton>
-                  <MainButton>
+                 </MainButton>
+                 <MainButton>
                     <Row>
-                        <Button 
-                            variant="default"
-                            style={{ width: 350, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
-                            >
-                            <Link to='mailto:bisraddesign@gmail.com'>Say Hello</Link>
-                            </Button>    
+                        <Button as="email" mailto="bisraddesign@gmail.com">Say Hey <span role="img" style={{ marginLeft: '.5rem' }}>   👋 </span></Button>
                     </Row>
-                  </MainButton>
+                 </MainButton>
                     <Row>
                         <LinkStyle>
                      

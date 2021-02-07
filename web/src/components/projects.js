@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import img2 from '../images/quips.png';
 import img3 from '../images/mediphor.png';
 import img4 from '../images/Hamilton.png';
@@ -32,8 +32,7 @@ class Projects extends React.Component {
                         <p style={{ fontSize: '15px' }}>
                         Working on a startup project tackling inconsistencies in the moving industry. 
                         I helped to update and outdated industry to fit a more modern landscape. 
-                        By creating a more seemless UI/UX, as well as social campaigns the company 
-                        sought to expand rapidly in the Greater Phoenix Area. IBuyers companies like Offerpad and Homie regularly used our services as we looked to expand.</p>
+                     </p>
                          <Button 
                             variant="default"
                             style={{ width: 350, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}

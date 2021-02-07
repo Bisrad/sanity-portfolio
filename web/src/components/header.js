@@ -1,30 +1,31 @@
-import { Link } from "gatsby";
 import React from "react"
-import { Navbar, Nav, Button, Container } from 'react-bootstrap';
-// Styles
+// Gatsby
+// import { Link } from "gatsby";
+// React Bootstrap
+import { Navbar, Nav, Container, NavLink } from 'react-bootstrap';
+// Styled Components
 import styled from 'styled-components';
-
-
+import Button from "../theme/Button";
 
 
 const NavStyle = styled.div`
   margin: 0;
   background-color: #181a1f; 
-      a {
-        margin-right: 25px;
-        color: #06BDD6!important;
+      #logo {
+        color: #06BDD6;
+        font-weight: 500;
       }
-      
-          #navbarResponsive {
-            /* margin-right: 5.8rem; */
+      a {
+        margin-right: 1rem;
+        color: #06BDD6!important;
+        text-decoration: none;
+          :hover {
+            color: #ffffff!important;
           }
-          #navToggle {
-            border: none;
-            fill: #06BDD6;
+          :active {
+            color: #ffffff!important;
           }
-          .pull-right {
-            color: #ffffff;
-          }
+      }
 `;
 
 const MainButton = styled.div`
@@ -36,28 +37,21 @@ const Header = ({ siteTitle }) => (
   <NavStyle>
    <Container>
       <Navbar expand="md">
-        <Navbar.Brand href="/">{siteTitle}</Navbar.Brand> 
+        <Navbar.Brand id="logo" href="/">{siteTitle}</Navbar.Brand> 
         <Navbar.Toggle id="navToggle" aria-controls="navbarResponsive" />
         <Navbar.Collapse id="navbarResponsive">
           <Nav as="ul" className="justify-content-center" activeKey="/home">
 
-                  <Link to="/">Home</Link>
-                  <Link to="/#about">About</Link>
-                  <Link to="/#work">Work</Link>
-                  <Link to="/#projects">Projects</Link>
-                  <Link to="/#contact">Contact</Link>
+                  <NavLink as="a" href="/" exact={true} activeClassName='is-active' >Home</NavLink>
+                  <NavLink as="a" href="/#about">About</NavLink>
+                  <NavLink as="a" href="/#work">Work</NavLink>
+                  <NavLink as="a" href="/#projects">Projects</NavLink>
+                  <NavLink as="a" href="/#contact">Contact</NavLink>
     
             </Nav>  
-
                   <MainButton>
-                        <Button 
-                            variant="default"
-                            style={{ width: 60, borderColor: '#06BDD6', backgroundColor: 'none', color: '#06BDD6'  }}
-                            >
-                            <Link style={{ margin: 0 }} to="/resume">Resume</Link>
-                        </Button>    
+                         <Button as="a" href="/resume">Resume</Button>     
                   </MainButton>
-
           </Navbar.Collapse>
         </Navbar>
     </Container>

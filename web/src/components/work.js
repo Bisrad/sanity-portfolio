@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import styled from 'styled-components';c
+// import styled from 'styled-components';
 
 
 // const LeftStyle = styled.div`
@@ -28,6 +28,10 @@ import { Container, Row, Col } from "react-bootstrap";
 //     background-color: 'none';
 //     color: '#06BDD6';
 // `;
+
+
+
+
 
 class Work extends React.Component {
     render() {

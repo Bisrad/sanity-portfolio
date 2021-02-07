@@ -1,11 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Kodchasan:400,700');
-  * {
-    box-sizing: border-box;
-  }
+
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -14,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: 'Jost', sans-serif;
     background-color: #181a1f;
+    background-image: url('../images/Texture.png')
   }
   a {
     text-decoration: none;
@@ -26,3 +24,4 @@ export const GlobalStyle = createGlobalStyle`
     margin-left: 0;
   }
 `;
+
