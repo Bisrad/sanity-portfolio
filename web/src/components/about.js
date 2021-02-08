@@ -23,7 +23,7 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-    font-size: 1em;
+    font-size: 1.5rem;
     font-weight: 400;
 `;
 
@@ -37,9 +37,13 @@ class About extends React.Component {
                 <Row>
                     <Col style={{ margin: 'auto' }}>
                       <Title>Hey, I'm Brad</Title>
-                      <SubTitle>Front End Developer | Digital Designer</SubTitle>
+                      <SubTitle>Front End Developer | Graphic Designer</SubTitle>
+                      <p style={{ margin: '2rem auto' }}>
+                        Creative and self-driven dev/designer with 5+ years of 
+                        experience creating and delivering unique, innovative design solutions for consumers and growing brands. Skilled in taking projects from conception through to completion. Transforming information and concepts into attractive, human-centered designs.
+                      </p>
                 {/* Left Button */}
-                      <Button as="a" href="https://bisrad.myportfolio.com/">Design  Portfolio</Button>
+                      <Button primary as="a" href="https://bisrad.myportfolio.com/">Design  Portfolio</Button>
                 {/* Site Links */}
                 <Row>
                       <LinkStyle>
