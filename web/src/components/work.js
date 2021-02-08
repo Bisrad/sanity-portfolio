@@ -1,86 +1,118 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-// import styled from 'styled-components';
+import { Container, Card } from "react-bootstrap";
+import styled from 'styled-components';
+// Design Icon Import
+import Illustrator from '../assets/illustrator_icon.png'
+import Photoshop from '../assets/photoshop_icon.png'
+import Xd from '../assets/xd_icon.png'
+import Indesign from '../assets/indesign_icon.png'
+// Dev Icon Import
+import Html from '../assets/html-5_logo.png'
+import Css from '../assets/css-3_logo.png'
+import Js from '../assets/js_logo.png'
+import Node from '../assets/node-js_logo.png'
+import Sass from '../assets/Sass_logo.png'
+import Icon from '../assets/React_logo.png'
 
 
-// const LeftStyle = styled.div`
-//     border-left: 1px;
-//     border-left-style: solid;
-//     height: vh100;
-//         p {
-//             padding-left: 15px;
-//         }
-// `;
+const Title = styled.h2`
+    font-size: 4rem;
+    margin-bottom: 2rem;
+`;
 
-// const LinkStyle = styled.div`
-//   display: block;
-//   margin-top: 1rem;
-//   margin: 0;
-//     .icon {
-//       margin-right: 30px;
-//       color: #06BDD6;
-//     }
-// `;
+const SubTitle = styled.h3`
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    margin: auto;
+    color: #fff;
+`;
 
-// const ButtonStyle = styled.div`
-//     width: 350;
-//     border-color: '#06BDD6'; 
-//     background-color: 'none';
-//     color: '#06BDD6';
-// `;
-
-
-
-
+const IconStyle = styled.i`
+    margin-left: 1rem ;
+    .icon {
+            max-width: 45px;
+        }
+`;
 
 class Work extends React.Component {
     render() {
         return(
-            <Container style={{ justifyContent: 'center', padding: '3rem 5rem 1.5rem 5rem', }}>
-                <h1 style={{ display: 'inline-flex', marginRight: '1rem', marginBottom: '2rem'}}>
-                Work Experience
-                </h1>
-            <Row>
-                <Col sm={8}>
-                <h5 style={{ color: '#fff'}}>Graphic Designer</h5>
-                </Col>
-            </Row>
-            <Row style={{ marginBottom: '2rem' }}>
-                <Col sm={4}>Designer at Sandoval Studios
-                <Row>
-                <Col sm>https://www.sandovalagency.com/</Col>
-                </Row>
-                </Col>
-                <Col style={{ maxWidth: '45vw' }}>Designed Websites, Print collateral, and need materials</Col>
-            </Row>
-            <Row >
-                <Col sm={8}>
-                <h5 style={{ color: '#fff'}}>QA Engineer</h5>
-                </Col>
-            </Row>
-            <Row style={{ marginBottom: '2rem' }}>
-                <Col sm={4}>Quality Assurance Engineer at Fair
-                <Row>
-                     <Col sm>https://www.fair.com</Col>
-                </Row>
-                </Col>
-                <Col style={{ maxWidth: '45vw'}}>Worked with Product to pin Pain points, update Educational Materials, and enhance UI/UXs</Col>
-            </Row>
-            <Row >
-                <Col sm={8}>
-                <h5 style={{ color: '#fff'}}>Wordpress Designer</h5>
-                </Col>
-                <Col sm={4}>Graphic Designer and web api developer</Col>
-            </Row>
-            <Row style={{ marginBottom: '2rem' }}>
-                <Col sm={4}>Wordpress Designer at Endurance Internaition
-                <Row>
-                     <Col sm>https://www.endurance.com</Col>
-                </Row>
-                </Col>
-                <Col style={{ maxWidth: '45vw'}}>Designed WP Templates, and custom sites for clients in an high volume work environment</Col>
-            </Row>
-            </Container>
+            <Container style={{ margin: '4rem auto'}}>
+                    <Title>
+                    Work Experience
+                    </Title>
+                <Card  style={{ margin: '2rem 0rem', backgroundColor: '#131519'}}>
+                <Card.Header style={{ backgroundColor: '#131519', borderColor: '#131519'}}>
+                <IconStyle>
+                        <img className="icon" src={Illustrator} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Photoshop} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Xd} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Indesign} alt="illustrator-logo"/>
+                 </IconStyle>
+                </Card.Header>
+                    <Card.Body style={{ backgroundColor: '#181a1f' }}>
+                        <Card.Title style={{ padding: '0 2rem' }}>
+                        <SubTitle>
+                            Graphic Designer
+                        </SubTitle>
+                        </Card.Title>
+                        <Card.Text style={{ padding: '1rem 2rem' }}>
+                        <p>
+                            I value simple content structure, clean design patterns, and thoughtful interactions. 
+                        </p>
+                        <p>
+                            UX, UI, Web, Mobile, Apps, Logos. I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+                        </p>
+                        </Card.Text>
+                    </Card.Body>
+            </Card>
+            {/* --------------- */}
+                <Card style={{  margin: '2rem 0rem',backgroundColor: '#131519'}}>
+                <Card.Header style={{ backgroundColor: '#131519', borderColor: '#131519'}}>
+                <IconStyle>
+                        <img className="icon" src={Html} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Css} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Js} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Node} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Icon} alt="illustrator-logo"/>
+                        </IconStyle>
+                        <IconStyle>
+                        <img className="icon" src={Sass} alt="illustrator-logo"/>
+                        </IconStyle>
+           
+                </Card.Header>
+                    <Card.Body style={{ backgroundColor: '#181a1f' }}>
+                        <Card.Title style={{ padding: '0 2rem' }}>
+                        <SubTitle>
+                            Front End Developer
+                        </SubTitle>
+                        </Card.Title>
+                        <Card.Text style={{ padding: '1rem 2rem' }}>
+                        <p>
+                            I like to code things. Wether it be from scratch, with a team, or in my free time. 
+                            </p>
+                            <p>Being able to be the one that brings my own designs to life. Creating things that live on the internet: websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performance experiences.
+                        </p>
+                        </Card.Text>
+                    </Card.Body>
+            </Card>
+            {/* --------------- */}
+
+        </Container>
         );
     }
 }
