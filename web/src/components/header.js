@@ -15,7 +15,7 @@ const NavStyle = styled.div`
         color: #06BDD6;
         font-weight: 500;
       }
-      a {
+      #navlink {
         margin-right: 1rem;
         color: #06BDD6!important;
         text-decoration: none;
@@ -28,9 +28,25 @@ const NavStyle = styled.div`
       }
 `;
 
-const MainButton = styled.div`
+const NavButton = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    border: 1px solid #06BDD6;
+    border-radius: 4px;
+    color:  #06BDD6;
+    max-width: 23vw;
+    padding: 0.25em 1em;
+    margin: 1em 0em;
+        a {
+            font-size:  15px;
+           
+        }
+        :hover {
+            transition: all 0.3s ease 0s;
+            background-color:  #8bedf8;
+            color: #181a1f;
+            text-decoration: none;
+        }
 `;
 
 const Header = ({ siteTitle }) => (
@@ -42,16 +58,14 @@ const Header = ({ siteTitle }) => (
         <Navbar.Collapse id="navbarResponsive">
           <Nav as="ul" className="justify-content-center" activeKey="/home">
 
-                  <NavLink as="a" href="/" exact={true} activeClassName='is-active' >Home</NavLink>
-                  <NavLink as="a" href="/#about">About</NavLink>
-                  <NavLink as="a" href="/#work">Work</NavLink>
-                  <NavLink as="a" href="/#projects">Projects</NavLink>
-                  <NavLink as="a" href="/#contact">Contact</NavLink>
+                  <NavLink id="navlink" as="a" href="/" exact={true} activeClassName='is-active' >Home</NavLink>
+                  <NavLink id="navlink" as="a" href="/#about">About</NavLink>
+                  <NavLink id="navlink" as="a" href="/#work">Work</NavLink>
+                  <NavLink id="navlink" as="a" href="/#projects">Projects</NavLink>
+                  <NavLink id="navlink" as="a" href="/#contact">Contact</NavLink>
     
             </Nav>  
-                  <MainButton>
-                         <Button as="a" href="/resume">Resume</Button>     
-                  </MainButton>
+                  <NavButton as="a" href="/resume">Resume</NavButton>     
           </Navbar.Collapse>
         </Navbar>
     </Container>
