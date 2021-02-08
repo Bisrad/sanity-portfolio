@@ -11,7 +11,7 @@ import Work from '../components/work';
 import Projects from '../components/projects';
 import Facts from '../components/facts';
 
-import myImage from '../images/backgroundImage.png';
+import myImage from '../images/spiral.png';
 // import myTexture from '../images/Texture.png';
 
 
