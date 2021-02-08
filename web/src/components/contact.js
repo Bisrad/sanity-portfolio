@@ -33,12 +33,12 @@ class Contact extends React.Component {
                   </h5>
                  <MainButton>
                     <Row>
-                        <Button as="a" href="https://github.com/Bisrad">Checkout My Github</Button>
+                        <Button primary as="a" href="https://github.com/Bisrad">Checkout My Github</Button>
                     </Row>
                  </MainButton>
                  <MainButton>
                     <Row>
-                        <Button as="email" mailto="bisraddesign@gmail.com">Say Hey <span role="img" style={{ marginLeft: '.5rem' }}>   👋 </span></Button>
+                        <Button primary as="email" mailto="bisraddesign@gmail.com">Say Hey <span role="img" style={{ marginLeft: '.5rem' }}>   👋 </span></Button>
                     </Row>
                  </MainButton>
                     <Row>
