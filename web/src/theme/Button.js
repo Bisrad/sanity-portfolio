@@ -9,7 +9,7 @@ const Button = styled.button`
     color:  #181a1f;
     max-width: 23vw;
     padding: 0.25em 1em;
-    margin: 1em 0em;
+    margin: 1rem 0em;
         a {
             font-size:  15px;
            

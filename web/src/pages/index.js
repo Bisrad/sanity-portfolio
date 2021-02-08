@@ -11,12 +11,12 @@ import Work from '../components/work';
 import Projects from '../components/projects';
 import Facts from '../components/facts';
 
-import myImage from '../images/spiral.png';
+import myImage from '../images/Wavelarge.png';
 // import myTexture from '../images/Texture.png';
 
 
 const HeaderImage = styled.div`
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
   background: no-repeat url(${myImage});
 `;
