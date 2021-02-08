@@ -38,10 +38,6 @@ class About extends React.Component {
                     <Col style={{ margin: 'auto' }}>
                       <Title>Hey, I'm Brad</Title>
                       <SubTitle>Front End Developer | Graphic Designer</SubTitle>
-                      <p style={{ margin: '2rem auto' }}>
-                        Creative and self-driven dev/designer with 5+ years of 
-                        experience creating and delivering unique, innovative design solutions for consumers and growing brands. Skilled in taking projects from conception through to completion. Transforming information and concepts into attractive, human-centered designs.
-                      </p>
                 {/* Left Button */}
                       <Button primary as="a" href="https://bisrad.myportfolio.com/">Design  Portfolio</Button>
                 {/* Site Links */}

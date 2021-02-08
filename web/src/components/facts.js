@@ -22,32 +22,32 @@ const LeftStyle = styled.div`
 class Facts extends React.Component {
     render() {
         return(
-                <Container style={{ display: 'flex', justifyContent: 'center', padding: '2rem 1rem', borderRadius: 15 }}>
-                    <Row>
+                <Container>
+                    <Row style={{ borderRadius: 15, padding: '1rem', backgroundColor: '#131519'}}>
+                            <Col sm={8} md >
                         <LeftStyle>
-                            <Col sm={12} md={8} style={{ width: '23vw' }}>
                             <h6>Always Learning</h6>
                             <p>
                                 Taking the time each day to learn something new is a daily goal. In an industry the changes so fast it's key to stay on your toes, and pivot when needed.
                             </p>
-                            </Col>
                         </LeftStyle>
+                            </Col>
+                            <Col sm={8} md >
                         <LeftStyle>
-                            <Col sm={12} md={8} style={{ width: '23vw'}}>
                             <h6>Hobbies</h6>
                             <p>
                                 Taking time to enjoy the outdoors wether it be: camping, hiking, or rock climbing. Or listening to music and playing guitar when I can.
                             </p>
-                            </Col>
                         </LeftStyle>
+                            </Col>
+                            <Col sm={8} md >
                         <LeftStyle>
-                            <Col sm={12} md={8} style={{ width: '23vw'}}>
                             <h6>Future Interest</h6>
                             <p>
                                Currently, Building my skills as a Developer in React, Gatsby, and Sanity. Evolving interactions with my designs is the goal.
                             </p>
-                            </Col>
                         </LeftStyle>
+                            </Col>
                     </Row>
                 </Container>
         );

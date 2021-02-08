@@ -16,7 +16,7 @@ const ProjectButton = styled.div`
     border: 1px solid #06BDD6;
     border-radius: 4px;
     color:  #06BDD6;
-    max-width: 23vw;
+    max-width: 400px;
     padding: 0.25em 1em;
     margin: 1em 0em;
         a {
@@ -37,73 +37,62 @@ const Title = styled.h2`
     margin-bottom: 2rem;
 `;
 
-const SubTitle = styled.h3`
-    font-size: 3rem;
-    padding-bottom: 10px;
-    color: #fff;
-    `;
+// const SubTitle = styled.h3`
+//     font-size: 3rem;
+//     padding-bottom: 10px;
+//     color: #fff;
+// `;
+
+
 
 
 class Projects extends React.Component {
     render() {
         return(
-            <Container id='projects' style={{ padding: 70 }}>
+            <Container id='projects' >
             <Title>Recent Projects</Title>
-                <Row style={{ marginBottom: '3rem' }}>
-                    <Col>
-                        <Image fluid style={{ borderRadius: '15px' }} src={img2} alt="project img"/>
-                    </Col>
-                    <Col>
-                        <SubTitle>| Quips</SubTitle>
-                        <ProjectButton>
-                            Visit WebSite
-                        </ProjectButton>  
-                    </Col>
-                </Row>
-                <Row style={{ marginBottom: '3rem' }}>
-                    <Col>
-                        <Image fluid style={{ borderRadius: '15px' }} src={img6} alt="project img"/>
-                    </Col>
-                    <Col>
-                        <SubTitle>| Slick's Slices</SubTitle>
-                        <ProjectButton>
-                            View Deployment
-                        </ProjectButton>  
-                    </Col>
-                </Row>
-                <Row style={{ marginBottom: '3rem' }}>
-                    <Col>
-                        <Image fluid style={{ borderRadius: '15px' }} src={img3} alt="img"/>
-                    </Col>
-                    <Col>
-                        <SubTitle>|  Mediphor</SubTitle>
-                         <ProjectButton>
-                             Visit WebSite
-                         </ProjectButton>  
-                    </Col>
-                </Row>
-                <Row style={{ marginBottom: '3rem' }}>
-                    <Col>
-                        <Image style={{ borderRadius: '15px' }} src={img4} alt="project img" fluid/>
-                    </Col>
-                    <Col>
-                        <SubTitle>|  Hamilton HS</SubTitle>
-                        <ProjectButton>
-                            Visit WebSite
-                        </ProjectButton>  
-                    </Col>
-                </Row>
-                <Row style={{ marginBottom: '3rem' }}>
-                    <Col>
-                        <Image fluid style={{ borderRadius: '15px' }}src={img5} alt="project img" />
-                    </Col>
-                    <Col>
-                        <SubTitle>| BodyBern</SubTitle>
-                        <ProjectButton>
-                            Currently Underdevelopment
-                        </ProjectButton>  
-                    </Col>
-                </Row>
+              {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
+  <Row>
+    <Col sm={8} md style={{ margin: 'auto' }} >
+    <Image fluid  rounded src={img2} alt="Quips"/>
+    <ProjectButton>
+        Visit WebSite
+    </ProjectButton>  
+    </Col>
+    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Image fluid rounded src={img3} alt="Quips"/>
+    <ProjectButton>
+        Visit WebSite
+    </ProjectButton>  
+    </Col>
+    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Image fluid rounded  src={img4} alt="Quips"/>
+    <ProjectButton>
+        Visit WebSite
+    </ProjectButton>  
+    </Col>
+  </Row>
+  <Row>
+    <Col sm={8} md style={{ margin: 'auto' }} >
+    <Image fluid  rounded src={img5} alt="Quips"/>
+    <ProjectButton>
+        Visit WebSite
+    </ProjectButton>  
+    </Col>
+    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Image fluid rounded src={img6} alt="Quips"/>
+    <ProjectButton>
+        Visit WebSite
+    </ProjectButton>  
+    </Col>
+    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Image fluid rounded  src={img4} alt="Quips"/>
+    <ProjectButton>
+        Visit WebSite
+    </ProjectButton>  
+    </Col>
+  </Row>
+               
         </Container>    
         )
     }
