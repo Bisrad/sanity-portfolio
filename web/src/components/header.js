@@ -26,6 +26,11 @@ const NavStyle = styled.div`
             color: #ffffff!important;
           }
       }
+      #navToggle {
+        border: none;
+        color: #06BDD6;
+        filter: invert(1);
+      }
 `;
 
 const NavButton = styled.div`

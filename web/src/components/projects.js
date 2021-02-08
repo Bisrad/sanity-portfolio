@@ -33,7 +33,7 @@ const ProjectButton = styled.div`
 `;
 
 const Title = styled.h2`
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 `;
 
@@ -50,7 +50,7 @@ class Projects extends React.Component {
     render() {
         return(
             <Container id='projects' >
-            <Title>Recent Projects</Title>
+            <Title>Web Projects</Title>
               {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
   <Row>
     <Col sm={8} md style={{ margin: 'auto' }} >

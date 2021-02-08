@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card } from "react-bootstrap";
+import { Container, Card, Col } from "react-bootstrap";
 import styled from 'styled-components';
 // Design Icon Import
 import Illustrator from '../assets/illustrator_icon.png'
@@ -16,7 +16,7 @@ import Icon from '../assets/React_logo.png'
 
 
 const Title = styled.h2`
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 `;
 
@@ -41,7 +41,7 @@ class Work extends React.Component {
                     <Title>
                     Work Experience
                     </Title>
-                <Card  style={{ margin: '2rem 0rem', backgroundColor: '#131519'}}>
+                <Card fluid sm style={{ margin: '2rem 0rem', backgroundColor: '#131519'}}>
                 <Card.Header style={{ backgroundColor: '#131519', borderColor: '#131519'}}>
                 <IconStyle>
                         <img className="icon" src={Illustrator} alt="illustrator-logo"/>
@@ -73,7 +73,8 @@ class Work extends React.Component {
                     </Card.Body>
             </Card>
             {/* --------------- */}
-                <Card style={{  margin: '2rem 0rem',backgroundColor: '#131519'}}>
+  
+                <Card md style={{  margin: '2rem 0rem',backgroundColor: '#131519'}}>
                 <Card.Header style={{ backgroundColor: '#131519', borderColor: '#131519'}}>
                 <IconStyle>
                         <img className="icon" src={Html} alt="illustrator-logo"/>
@@ -110,6 +111,7 @@ class Work extends React.Component {
                         </Card.Text>
                     </Card.Body>
             </Card>
+            
             {/* --------------- */}
 
         </Container>

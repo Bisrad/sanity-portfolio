@@ -32,10 +32,10 @@ class About extends React.Component {
     render() {
         return(
           <Container>
-          <Jumbotron id='about' style={{ backgroundColor: 'transparent' }}>
+          <Jumbotron id='about' style={{ margin: '2rem 0rem', backgroundColor: 'transparent' }}>
                 {/* Main Text */}
                 <Row>
-                    <Col style={{ margin: 'auto' }}>
+                    <Col xs={10} md={4} style={{ margin: 'auto' }}>
                       <Title>Hey, I'm Brad</Title>
                       <SubTitle>Front End Developer | Graphic Designer</SubTitle>
                 {/* Left Button */}
@@ -67,8 +67,10 @@ class About extends React.Component {
                     </Row>
                     </Col>
                   { /* Right Profile Image */ }
-                  <Col>
-                      <Image style={{ margin: 'auto'}}src={img1} alt="profile pic" fluid/>
+                  <Col sm={12} md={6} className="d-none d-lg-block">
+                  <Boop rotation={10} timing={200}> 
+                      <Image fluid style={{ margin: 'auto'}}src={img1} alt="profile pic" />
+                  </Boop>
                   </Col>
                 </Row>
             </Jumbotron>

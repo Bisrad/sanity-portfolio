@@ -23,7 +23,7 @@ class Facts extends React.Component {
     render() {
         return(
                 <Container>
-                    <Row style={{ borderRadius: 15, padding: '1rem', backgroundColor: '#131519'}}>
+                    <Row style={{ borderRadius: 15, padding: '1rem', backgroundColor: 'rgb(19, 21, 25, 0.6)'}}>
                             <Col sm={8} md >
                         <LeftStyle>
                             <h6>Always Learning</h6>
