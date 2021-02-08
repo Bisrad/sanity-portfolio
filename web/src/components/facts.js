@@ -9,6 +9,7 @@ const LeftStyle = styled.div`
     margin: 'auto';
     
         h6 {
+            font-size: 1.3rem;
             padding-left: 10px;
             color: #fff;
         }
@@ -24,21 +25,27 @@ class Facts extends React.Component {
                 <Container style={{ display: 'flex', justifyContent: 'center', padding: '2rem 1rem', borderRadius: 15 }}>
                     <Row>
                         <LeftStyle>
-                            <Col sm={12} md={8} style={{ width: '30vw' }}>
-                            <h6 >Always Learning</h6>
-                            <p>I enjoy spending my time learning as much as I can about all different aspects of technology past and present.</p>
+                            <Col sm={12} md={8} style={{ width: '23vw' }}>
+                            <h6>Always Learning</h6>
+                            <p>
+                                Taking the time each day to learn something new is a daily goal. In an industry the changes so fast it's key to stay on your toes, and pivot when needed.
+                            </p>
                             </Col>
                         </LeftStyle>
                         <LeftStyle>
-                            <Col sm={12} md={8} style={{ width: '20vw'}}>
-                            <h6>My Hobbies</h6>
-                            <p>I take time to enjoy the outdoors: camping, hiking, guitar, and rock climbing when I can.</p>
+                            <Col sm={12} md={8} style={{ width: '23vw'}}>
+                            <h6>Hobbies</h6>
+                            <p>
+                                Taking time to enjoy the outdoors wether it be: camping, hiking, or rock climbing. Or listening to music and playing guitar when I can.
+                            </p>
                             </Col>
                         </LeftStyle>
                         <LeftStyle>
-                            <Col sm={12} md={8} style={{ width: '20vw'}}>
+                            <Col sm={12} md={8} style={{ width: '23vw'}}>
                             <h6>Future Interest</h6>
-                            <p>I'm looking to grow my skills in Sanity, Gatsby and React in the near Future</p>
+                            <p>
+                               Currently, Building my skills as a Developer in React, Gatsby, and Sanity. Evolving interactions with my designs is the goal.
+                            </p>
                             </Col>
                         </LeftStyle>
                     </Row>
