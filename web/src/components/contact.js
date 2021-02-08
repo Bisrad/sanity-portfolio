@@ -24,10 +24,6 @@ const Title = styled.h1`
     color: #fff;
 `;
 
-const SubTitle = styled.h2`
-    font-size: 1.5rem;
-    font-weight: 400;
-`;
 
 const Mailto = ({ email, subject = '', body = '', children }) => {
     let params = subject || body ? '?' : '';
@@ -53,7 +49,7 @@ class Contact extends React.Component {
               
                     <Row style={{ justifyContent: 'center' }}>
                     <Mailto email="bisraddesign@gmail.com" subject="Hey, Lets Code Something!">
-                        <Button primary as="email" mailto="bisraddesign@gmail.com">Say Hey <span role="img" style={{ marginLeft: '.5rem' }}>   👋 </span></Button>
+                        <Button primary as="email" mailto="bisraddesign@gmail.com">Say Hey <span role="img" aria-label='wave' style={{ marginLeft: '.5rem' }}>   👋 </span></Button>
                         </Mailto>
                     </Row>
                 

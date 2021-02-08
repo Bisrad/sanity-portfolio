@@ -26,7 +26,7 @@ const Boop = ({ rotation = 0, timing = 150, children }) => {
     };
     return (
       // eslint-disable-next-line max-len
-      <span onMouseEnter={trigger} style={style}>
+      <span role="" onMouseEnter={trigger} style={style}>
         {children}
       </span>
     );

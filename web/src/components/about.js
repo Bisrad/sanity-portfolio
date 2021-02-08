@@ -68,9 +68,9 @@ class About extends React.Component {
                     </Col>
                   { /* Right Profile Image */ }
                   <Col sm={12} md={6} className="d-none d-lg-block">
-                  <Boop rotation={10} timing={200}> 
+                 
                       <Image fluid style={{ margin: 'auto'}}src={img1} alt="profile pic" />
-                  </Boop>
+                
                   </Col>
                 </Row>
             </Jumbotron>

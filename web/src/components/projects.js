@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import styled from "styled-components";
 // import styled from 'styled-components';
@@ -36,12 +36,6 @@ const Title = styled.h2`
     font-size: 3rem;
     margin-bottom: 2rem;
 `;
-
-// const SubTitle = styled.h3`
-//     font-size: 3rem;
-//     padding-bottom: 10px;
-//     color: #fff;
-// `;
 
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Card, Col } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 import styled from 'styled-components';
 // Design Icon Import
 import Illustrator from '../assets/illustrator_icon.png'
@@ -37,7 +37,7 @@ const IconStyle = styled.i`
 class Work extends React.Component {
     render() {
         return(
-            <Container style={{ margin: '4rem auto'}}>
+            <Container id="work" style={{ margin: '4rem auto'}}>
                     <Title>
                     Work Experience
                     </Title>
