@@ -4,9 +4,9 @@ const Button = styled.button`
     display: flex;
     justify-content: center;
     background-color: ${props => props.primary ? "#06BDD6" : "transparent"};   
-    border: 1px solid #06BDD6;
+    /* border: 1px solid #06BDD6; */
     border-radius: 4px;
-    color:  #06BDD6;
+    color:  #181a1f;
     max-width: 23vw;
     padding: 0.25em 1em;
     margin: 1em 0em;
@@ -16,7 +16,7 @@ const Button = styled.button`
         }
         :hover {
             transition: all 0.3s ease 0s;
-            background-color:  #06BDD6;
+            background-color:  #8bedf8;
             color: #181a1f;
             text-decoration: none;
         }
