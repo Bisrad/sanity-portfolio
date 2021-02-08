@@ -194,7 +194,8 @@ class Resume extends React.Component {
             </Col>
             <Col sm={6}>
             <h1 style={{ color: '#fff' }}>Professional Summary</h1>
-            <p style={{ fontSize: 14 }}>Starting as a passionate graphic designer working with small businesses and agencies; I gradually adapted the ability to code and develop my own creative vision into functioning user experiences. Working as a team player to establish foundation for new visions and products has been a dream of mine. Being able to continue on this path of learning has opened my eyes to becoming a Front End Developer.
+            <p style={{ fontSize: 14 }}>
+                Creative and self-driven dev/designer with 5+ years of experience creating and delivering unique, innovative design solutions for consumers and growing brands. Skilled in taking projects from conception through to completion. Transforming information and concepts into attractive, human-centered designs.
             <br />
             </p>
             <Row>
