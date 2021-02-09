@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 // Styles
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 // Component Imports
 import Header from './header';

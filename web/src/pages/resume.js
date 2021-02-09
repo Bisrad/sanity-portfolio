@@ -6,24 +6,18 @@ import { Col, Container, Row, Image } from 'react-bootstrap';
 import img1 from '../images/ProfilePic.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkerAlt, faPencilRuler } from '@fortawesome/free-solid-svg-icons';
-// import Pdf from '../assets/bradResume2019.pdf';
-import Button from "../theme/Button"
+// Styled Imports
+import  Mailto from '../components/Email'
 
-
-import myImage from '../images/backgroundImage.png';
-
-const HeaderImage = styled.div`
-  background: no-repeat url(${myImage});
-`;
+import  Button  from "../theme/Button"
+import  StyledLink  from "../theme/StyledLink"
+import ResumeBackground from '../theme/ResumeImage';
 
 
 const ResumeStyles = styled.div`
     display: flex;
     justify-content: center;
-
- 
-        .img1 {
-            
+        .img1 { 
             width: 265px;
             margin-bottom: 1.5rem;
         }
@@ -35,27 +29,7 @@ const ResumeStyles = styled.div`
         }
 `;
 
-const StyledLink = styled.a`
-    color: #06BDD6;
-     a:hover {
-         text-decoration: none!important;
-         color: #fff;
-     }
-`;
-
-
-
-const Mailto = ({ email, subject = '', body = '', children }) => {
-    let params = subject || body ? '?' : '';
-    if (subject) params += `subject=${encodeURIComponent(subject)}`;
-    if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
-  
-    return <a href={`mailto:${email}${params}`}>{children}</a>;
-  };
-
-
 class WorkExperience extends React.Component {
-
     render() { 
         return (
             <div>
@@ -149,7 +123,7 @@ class Resume extends React.Component {
     render() {
         return(
             <Layout>
-            <HeaderImage>
+            <ResumeBackground>
             <ResumeStyles>
             <Container style={{ justifyContent: 'center', margin: 'auto', padding: '5rem ' }}>
             <Row>
@@ -161,7 +135,7 @@ class Resume extends React.Component {
                 <FontAwesomeIcon icon={faEnvelope} style={{ margin: '3px 15px 0px 0px' }} />
                 <Mailto email="bisraddesign@gmail.com" subject="Hey, Lets Code Something!">
                 <StyledLink>
-                <a mailto='bisraddesign@gmail.com'>Bisraddesign@gmail.com</a>
+                <a mailto='bisraddesign@gmail.com' target="_blank">Bisraddesign@gmail.com</a>
                 <br />
                 </StyledLink>
                 </Mailto>
@@ -170,7 +144,7 @@ class Resume extends React.Component {
             <Row style={{ justifyContent: 'center', margin: '1rem auto' }}>
                <FontAwesomeIcon icon={faPencilRuler} style={{ margin: '3px 15px 0px 0px' }} />
                <StyledLink>
-                <a href="https://bisrad.myportfolio.com/">My Design Portfolio</a>
+                <a href="https://bisrad.myportfolio.com/" target="_blank">My Design Portfolio</a>
                 </StyledLink>
                 <br />
             </Row>
@@ -206,7 +180,7 @@ class Resume extends React.Component {
             </Row>
             </Container>
             </ResumeStyles>
-            </HeaderImage>
+            </ResumeBackground>
             </Layout>
         );
     }

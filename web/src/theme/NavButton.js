@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
-const Button = styled.button`
+const NavButton = styled.div`
     display: flex;
     justify-content: center;
-    background-color: ${props => props.primary ? "#06BDD6" : "transparent"};   
-    /* border: 1px solid #06BDD6; */
+    border: 1px solid #06BDD6;
     border-radius: 4px;
-    color:  #181a1f;
-    max-width: 100%;
+    color:  #06BDD6;
+    max-width: 23vw;
     padding: 0.25em 1em;
-    margin: 1rem 0em;
+    margin: 1em 0em;
         a {
-            font-size:  15px; 
+            font-size:  15px;
+           
         }
         :hover {
             transition: all 0.3s ease 0s;
@@ -19,6 +19,6 @@ const Button = styled.button`
             color: #181a1f;
             text-decoration: none;
         }
-    `;
+`;
 
-export default Button;
+export default NavButton
