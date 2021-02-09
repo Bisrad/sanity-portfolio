@@ -1,5 +1,5 @@
 {
-  "name": "Sanity Portfolio",
+  "name": "sanity-portfolio",
   "private": true,
   "description": "Resume and Dev Portfolio",
   "version": "0.1.0",
@@ -9,7 +9,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@pdftron/webviewer": "^7.2.0",
     "babel-plugin-styled-components": "^1.12.0",
     "bootstrap": "^4.6.0",
     "css-doodle": "^0.14.2",
@@ -47,12 +46,11 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Bisrad/sanity-portfolio"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

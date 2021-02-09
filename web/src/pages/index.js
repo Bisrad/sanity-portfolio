@@ -20,7 +20,7 @@ const IndexPage = () => (
         <Facts id='facts' />
         <Work  id='work' />
     </HeaderImage>
-    <ResumeBackground >
+    <ResumeBackground style={{ backgroundPosition: 'bottom' }}>
         <Projects id='projects' />
         <Contact id='contact' />
      </ResumeBackground>
