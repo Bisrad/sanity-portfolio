@@ -3,8 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Kodchasan:400,700');
 
-  *, *:before, *:after {
-    box-sizing: inherit;
+  * {
+    box-sizing: border-box!important;
+    overflow-x: hidden;
   }
   body {
     padding: 0;

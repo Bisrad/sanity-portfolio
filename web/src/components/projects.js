@@ -47,19 +47,19 @@ class Projects extends React.Component {
             <Title>Web Projects</Title>
               {/* Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop */}
   <Row>
-    <Col sm={8} md style={{ margin: 'auto' }} >
+    <Col sm={8} md style={{ marginBottom: '2rem', margin: 'auto' }} >
     <Image fluid  rounded src={img2} alt="Quips"/>
     <ProjectButton>
         Visit WebSite
     </ProjectButton>  
     </Col>
-    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Col sm={8} md style={{ marginBottom: '2rem', margin: 'auto' }}>
     <Image fluid rounded src={img3} alt="Quips"/>
     <ProjectButton>
         Visit WebSite
     </ProjectButton>  
     </Col>
-    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Col sm={8} md style={{ marginBottom: '2rem', margin: 'auto' }}>
     <Image fluid rounded  src={img4} alt="Quips"/>
     <ProjectButton>
         Visit WebSite
@@ -67,19 +67,19 @@ class Projects extends React.Component {
     </Col>
   </Row>
   <Row>
-    <Col sm={8} md style={{ margin: 'auto' }} >
+    <Col sm={8} md style={{ marginTop: '1.8rem', margin: 'auto' }} >
     <Image fluid  rounded src={img5} alt="Quips"/>
     <ProjectButton>
         Visit WebSite
     </ProjectButton>  
     </Col>
-    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Col sm={8} md style={{ marginBottom: '2rem', margin: 'auto' }}>
     <Image fluid rounded src={img6} alt="Quips"/>
     <ProjectButton>
         Visit WebSite
     </ProjectButton>  
     </Col>
-    <Col sm={8} md style={{ margin: 'auto' }}>
+    <Col sm={8} md style={{ marginTop: '2.8rem', margin: 'auto' }}>
     <Image fluid rounded  src={img4} alt="Quips"/>
     <ProjectButton>
         Visit WebSite
