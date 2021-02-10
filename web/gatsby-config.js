@@ -21,7 +21,10 @@ module.exports = {
         icon: `web/src/images/favicon-32x32.png`,
           rule: {
             includes: /images/
-          }
+          },
+          flags: {
+            THE_FLAG: false
+        } 
       },
     },
   ],

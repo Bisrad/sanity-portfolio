@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { Link } from "gatsby";
+
 import Button from "../theme/Button";
 import Boop from "../theme/Boop"
 
@@ -57,24 +57,24 @@ class Contact extends React.Component {
                         <LinkStyle>
                  
                         <Boop rotation={20} timing={200}>
-                          <Link to='https://github.com/Bisrad'>
+                          <a href='https://github.com/Bisrad'>
                               <FontAwesomeIcon className="icon" icon={faGithub} size='2x' />
-                          </Link>
+                          </a>
                         </Boop>
                         <Boop  rotation={-20} timing={200}>
-                          <Link to='https://www.facebook.com/brad.thompson.543792'>
+                          <a href='https://www.facebook.com/brad.thompson.543792'>
                               <FontAwesomeIcon className="icon flex-grow-2" icon={faFacebook} size='2x' />
-                          </Link>
+                          </a>
                         </Boop>
                         <Boop rotation={20} timing={200}>
-                          <Link to='https://twitter.com/Dev_Bread'>
+                          <a href='https://twitter.com/Dev_Bread'>
                               <FontAwesomeIcon className="icon" icon={faTwitter} size='2x' />
-                          </Link>
+                          </a>
                         </Boop>
                         <Boop  rotation={20} timing={200}>
-                          <Link to='https://www.linkedin.com/in/brad-thompson-95a88913a/'>
+                          <a href='https://www.linkedin.com/in/brad-thompson-95a88913a/'>
                               <FontAwesomeIcon className="icon" icon={faLinkedin} size='2x' />
-                          </Link>
+                          </a>
                         </Boop>
                     
                         </LinkStyle>  
