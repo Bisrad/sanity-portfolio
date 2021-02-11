@@ -155,7 +155,7 @@ class Resume extends React.Component {
                 <br />
             </Row>
                 <Row style={{ justifyContent: 'center', margin: '1rem auto' }}>
-                <Button primary as='a' href="https://resume.io/r/yFv8cI2lh">Download Resume</Button>
+                <Button primary as='a' href="https://resume.io/r/yFv8cI2lh" target="_blank" rel="noreferrer">Download Resume</Button>
               
                 </Row>
             </Col>
