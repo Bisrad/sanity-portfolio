@@ -10,11 +10,9 @@
 > A personal portfolio, built using React for learning new skills and showcasing projects in development and that are deployed
 
 
+![Current Deployment](Portfolio.png)
 
-![Current Deployment]
-(Portfolio.png)
-
-### 🏠 [Homepage](www.devbread.com)
+### 🏠 [Homepage](https://www.devbread.com)
 
 ## Author
 
