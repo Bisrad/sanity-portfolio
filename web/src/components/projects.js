@@ -17,7 +17,7 @@ const Title = styled.h2`
     margin-bottom: 2rem;
 `;
 
-
+// TODO: Update all projects to most recent, Continue working on Responsive Optimization 
 class Projects extends React.Component {
     render() {
         return(
