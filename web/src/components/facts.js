@@ -36,7 +36,7 @@ class Facts extends React.Component {
                         <LeftStyle>
                             <h6>Hobbies</h6>
                             <p>
-                                Taking time to enjoy the outdoors wether it be: camping, hiking, or rock climbing. Or listening to music and playing guitar when I can.
+                                Always trying to get outside wether it be: camping, hiking, or rock climbing. Or listening to music and playing guitar when I can.
                             </p>
                         </LeftStyle>
                             </Col>

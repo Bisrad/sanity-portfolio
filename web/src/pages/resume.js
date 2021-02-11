@@ -38,55 +38,55 @@ class WorkExperience extends React.Component {
                         <Col style= {{ padding: 0 }}>
                             <h5>Web Designer</h5> 
                             <span style={{ color: '#fff', marginRight: '1rem' }}>Quips</span>
-                            <span style={{ marginRight: '1rem' }}>Tempe, AZ</span>
+                            <span style={{ marginRight: '1rem' }}>Tempe</span>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <span>Full Time</span>
-                            <p> Sept 2019 - Aug 2020 </p>
+                            <p>2020 </p>
                         </Col>
                     </Row>
                     <Row style= {{ marginTop: 15 }}>
                         <Col style= {{ padding: 0 }}>
                             <h5>Quality Assurance Analyst</h5> 
                             <span style={{ color: '#fff', marginRight: '1rem' }}>Fair</span>
-                            <span style={{ marginRight: '1rem' }}>Phoenix, AZ</span>
+                            <span style={{ marginRight: '1rem' }}>Phoenix</span>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <span>Full Time</span>
-                            <p>June 2019 - Oct. 2019</p>
+                            <p>2019</p>
                         </Col>
                     </Row>
                     <Row style= {{ marginTop: 15 }}>
                         <Col style= {{ padding: 0 }}>
                             <h5>Web Developer</h5> 
                             <span style={{ color: '#fff', marginRight: '1rem' }}>Mediphor</span>
-                            <span>Tempe, AZ</span>
+                            <span>Tempe</span>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <span>Full Time</span>
-                            <p>May 2018 - June 2019</p>
+                            <p>2019</p>
                         </Col>
                     </Row>
                     <Row style= {{ marginTop: 15 }}>
                         <Col style= {{ padding: 0 }}>
                             <h5>Wordpress Designer</h5> 
                             <span style={{ width: 55, color: '#fff', marginRight: '1rem' }}>Endurance </span>
-                            <span>Tempe, AZ</span>
+                            <span>Tempe</span>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <span>Full Time</span>
-                            <p> June 2017 - May 2018</p>
+                            <p>2018</p>
                         </Col>
                     </Row>
                     <Row style= {{ marginTop: 15 }}>
                         <Col style= {{ padding: 0 }}>
                             <h5>Graphic Designer</h5> 
                             <span style={{ width: 55, color: '#fff', marginRight: '1rem' }}>Sandoval Agency</span>
-                            <span>Tempe, AZ</span>
+                            <span>Tempe</span>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
                             <span>Full Time</span>
-                            <p> Jan 2016 - Jan 2017</p>
+                            <p>2017</p>
                         </Col>
                     </Row>
                 </Container>
@@ -107,7 +107,7 @@ class EducationBlock extends React.Component {
                             <span style={{ marginRight: '2rem' }}></span>
                         </Col>
                         <Col style={{ textAlign: 'right' }}>
-                            <span>Associated in Graphic Design</span>
+                            <span>AA in Graphic Design</span>
                         </Col>
                     </Row>
                 </Container>

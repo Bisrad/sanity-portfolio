@@ -16,12 +16,12 @@ import Icon from '../assets/React_logo.png'
 
 
 const Title = styled.h2`
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
 `;
 
 const SubTitle = styled.h3`
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding-bottom: 10px;
     margin: auto;
     color: #fff;
@@ -59,15 +59,18 @@ class Work extends React.Component {
                     <Card.Body style={{ backgroundColor: '#181a1f' }}>
                         <Card.Title style={{ padding: '0 2rem' }}>
                         <SubTitle>
-                            Graphic Designer
+                            Web Designer
                         </SubTitle>
                         </Card.Title>
                         <Card.Text style={{ padding: '1rem 2rem' }}>
                         <p>
-                            I value simple content structure, clean design patterns, and thoughtful interactions. 
+                        I value simplicity and usability in my designs. Curating a user experience that is not only inline with client goals, but enables the consume to digest the content appropriately and intentionally.
                         </p>
                         <p>
-                            UX, UI, Web, Mobile, Apps, Logos. I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.
+                        I work with Brand Identity, UX, and UI to create modern, responsive website designs. I'm proficient in Photoshop, XD and Illustrator.
+                        </p>
+                        <p>
+                        I've done remote work for agencies, startups for both business and consumer use.
                         </p>
                         </Card.Text>
                     </Card.Body>

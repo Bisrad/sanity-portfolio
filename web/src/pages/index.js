@@ -7,6 +7,7 @@ import About from '../components/about';
 import Work from '../components/work';
 import Projects from '../components/projects';
 import Facts from '../components/facts';
+import Javascript from '../components/javascript';
 // Image
 import HeaderImage from '../theme/HeaderImage'
 import ResumeBackground from '../theme/ResumeImage'
@@ -22,6 +23,7 @@ const IndexPage = () => (
     </HeaderImage>
     <ResumeBackground style={{ backgroundPosition: 'bottom' }}>
         <Projects id='projects' />
+        <Javascript id='javascript' />
         <Contact id='contact' />
      </ResumeBackground>
   </Layout>

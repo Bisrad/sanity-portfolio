@@ -48,8 +48,7 @@ class Projects extends React.Component {
     <Button primary as="a" href="https://bodybern.com/">UnderDevelopment</Button>
     </Col>
     <Col sm={8} md style={{ marginTop: '2.8rem', margin: 'auto' }}>
-    <Image fluid rounded  src={img4} alt="Quips"/>
-    <Button primary as="a" href="http://hamiltononeinfour.com/">Visit Site</Button>
+   
     </Col>
   </Row>        
         </Container>    

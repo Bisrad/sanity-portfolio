@@ -37,7 +37,7 @@ class About extends React.Component {
                 <Row>
                     <Col xs={10} md={6} style={{ margin: 'auto' }}>
                       <Title>Hey, I'm Brad</Title>
-                      <SubTitle>Front End Developer | Graphic Designer</SubTitle>
+                      <SubTitle>Front End Developer | Web Designer</SubTitle>
                 {/* Left Button */}
                       <Button primary as="a" href="https://bisrad.myportfolio.com/">Design  Portfolio</Button>
                 {/* Site Links */}
