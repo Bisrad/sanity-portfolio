@@ -1,15 +1,15 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Image from 'react-bootstrap/Image'
+import { Col, Container, Row } from "react-bootstrap";
+import Image from 'react-bootstrap/Image';
 import styled from "styled-components";
-
-import img7 from '../images/Day-Grid-Image.png';
-import img8 from '../images/Quiz-Grid-Image.png';
-import img9 from '../images/Pass-Grid-Image.png';
 import img10 from '../images/Calc-Grid-Image.png';
+import img7 from '../images/Day-Grid-Image.png';
+import img9 from '../images/Pass-Grid-Image.png';
+import img8 from '../images/Quiz-Grid-Image.png';
 import img11 from '../images/Weather-Grid-Image.png';
+import Button from "../theme/Button";
 
-import Button from "../theme/Button"
+
 
 
 const Title = styled.h2`
